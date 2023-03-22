@@ -1,10 +1,9 @@
-
-import './App.css';
+import PlayAudio from "./components/PlayAudio";
 
 function App() {
   return (
     <div className="App">
-    on call
+    <PlayAudio />
     </div>
   );
 }
