@@ -1,13 +1,20 @@
 
 import './index.css'
 import SideNav from './components/SideNav';
-import MenuItem from './components/MenuItem';
+import PizzaItem from './components/PizzaItem';
+import { Route, Routes } from 'react-router';
+
 
 function App() {
   return (
     <div className="flex h-screen">
       <SideNav />
-      < MenuItem />
+      <Routes>
+        <Route path="/PizzaItem" element={<PizzaItem />}>
+          
+</Route>
+      </Routes>
+
       </div>
   );
 }
