@@ -4,10 +4,10 @@ import SideNav from './components/SideNav';
 
 function App() {
   return (
-    <div className="App border-4 border-rose-500 ... min-h-full">
-      <h1> ON CALL</h1>
-      <SideNav />
-    </div>
+    <div className="flex h-screen">
+      
+        <SideNav />
+      </div>
   );
 }
 
