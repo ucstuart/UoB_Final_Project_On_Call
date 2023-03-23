@@ -5,7 +5,6 @@ import SideNav from './components/SideNav';
 function App() {
   return (
     <div className="flex h-screen">
-      
         <SideNav />
       </div>
   );
