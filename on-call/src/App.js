@@ -1,10 +1,12 @@
-import PlayAudio from "./components/PlayAudio";
+// import PlayAudio from "./components/PlayAudio";
+import './index.css'
+import SideNav from './components/SideNav';
 
 function App() {
   return (
-    <div className="App">
-    <PlayAudio />
-    </div>
+    <div className="flex h-screen">
+        <SideNav />
+      </div>
   );
 }
 

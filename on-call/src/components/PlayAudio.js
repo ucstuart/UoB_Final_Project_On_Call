@@ -1,5 +1,5 @@
 import React from "react";
-import audioFile from "./file_example_MP3_700KB.mp3"
+import audioFile from "./audio-files/file_example_MP3_700KB.mp3"
 
 const PlayAudio = () => {
 const  audio = new Audio(audioFile);
