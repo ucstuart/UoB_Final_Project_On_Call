@@ -6,13 +6,6 @@
 
 \node_modules
 
-# Dont put these files up as they contain security credentials
-
-\index.mjs
-\index2.js
-\index3.js
-\index4sms.js
-
 # The Security file
 \security.js
 
