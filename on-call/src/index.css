@@ -1,7 +1,8 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-  margin: 0%;
-  padding: 0%;
+
+.app-container{
+  background-image: url(./components/images/pexels-lucas-george-wendt-4592706.jpg);
 }
