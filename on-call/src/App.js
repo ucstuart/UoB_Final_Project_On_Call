@@ -8,6 +8,7 @@ import Sandwiches from "./components/meal-components/Sandwiches"
 import Deserts from "./components/meal-components/Deserts"
 import Drinks from "./components/meal-components/Drinks"
 import { Route, Routes } from "react-router";
+import CheckOut from "./components/CheckOut";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
         <Route path="/"></Route>
       </Routes>
+      < CheckOut />
     </div>
   );
 }

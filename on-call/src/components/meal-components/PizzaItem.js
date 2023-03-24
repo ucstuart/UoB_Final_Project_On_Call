@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const PizzaItem = () => {
   return (
-    <div className="w-1/5 h-full bg-[#fff] flex flex-col mb-10">
+    <div className="w-1/5 h-full bg-[#fff] flex flex-col mb-10 ml-10">
       <h1 className="text-5xl">Pizza</h1>
       <h3 className="text-xl">Pizza</h3>
       <Link to="/">
