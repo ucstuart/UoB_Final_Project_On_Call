@@ -22,11 +22,20 @@ function App() {
   };
   const onRemove = (Pizza) => {
     const exist = cartItems.find((menuId) => menuId.id === Pizza.id);
+    if (exist.qty === 1) {
+      const newCartItems = cartItems.filter((menuId) => menuId.id !== Pizza.id);
+      setCartItems(newCartItems);
+    } else {
+      const newCartItems = cartItems.map((menuId) =>
+        menuId.id === Pizza.id ? { ...exist, qty: exist.qty - 1 } : menuId
+      );
+      setCartItems(newCartItems);
+    }
   };
   return (
     <div className="flex justify-center h-screen app-container">
       <SideNav />
-      <Menu onAdd={onAdd} onRemove={onRemove} Pizza={Pizza} />
+      <Menu cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} Pizza={Pizza} />
       <CheckOut countCartItems={cartItems.length} />
     </div>
   );
