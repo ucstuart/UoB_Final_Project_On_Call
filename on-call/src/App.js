@@ -1,29 +1,47 @@
 import "./index.css";
 import SideNav from "./components/SideNav";
-import PizzaItem from "./components/meal-components/PizzaItem";
-import Burgers from "./components/meal-components/Burgers"
-import Chicken from "./components/meal-components/Chicken"
-import Wraps from "./components/meal-components/Wraps"
-import Sandwiches from "./components/meal-components/Sandwiches"
-import Deserts from "./components/meal-components/Deserts"
-import Drinks from "./components/meal-components/Drinks"
-import { Route, Routes } from "react-router";
+import CheckOut from "./components/CheckOut";
+import Menu from "./components/Menu";
+import meals from "./components/Meals";
+import { useState } from "react";
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+  const { Pizza } = meals;
+  const onAdd = (Pizza) => {
+    const exist = cartItems.find((menuId) => menuId.id === Pizza.id);
+    if (exist) {
+      const newCartItems = cartItems.map((menuId) =>
+        menuId.id === Pizza.id ? { ...exist, qty: exist.qty + 1 } : menuId
+      );
+      setCartItems(newCartItems);
+    } else {
+      const newCartItems = [...cartItems, { ...Pizza, qty: 1 }];
+      setCartItems(newCartItems);
+    }
+  };
+  const onRemove = (Pizza) => {
+    const exist = cartItems.find((menuId) => menuId.id === Pizza.id);
+    if (exist.qty === 1) {
+      const newCartItems = cartItems.filter((menuId) => menuId.id !== Pizza.id);
+      setCartItems(newCartItems);
+    } else {
+      const newCartItems = cartItems.map((menuId) =>
+        menuId.id === Pizza.id ? { ...exist, qty: exist.qty - 1 } : menuId
+      );
+      setCartItems(newCartItems);
+    }
+  };
   return (
     <div className="flex justify-center h-screen app-container">
       <SideNav />
-      <Routes>
-        <Route path="/PizzaItem" element={<PizzaItem />}></Route>
-        <Route path="/Burgers" element={<Burgers/>}></Route>
-        <Route path="/Chicken" element={<Chicken />}></Route>
-        <Route path="/Wraps" element={<Wraps />}></Route>
-        <Route path="/Sandwiches" element={<Sandwiches />}></Route>
-        <Route path="/Deserts" element={<Deserts />}></Route>
-        <Route path="/Drinks" element={<Drinks />}></Route>
-
-        <Route path="/"></Route>
-      </Routes>
+      <Menu
+        cartItems={cartItems}
+        onAdd={onAdd}
+        onRemove={onRemove}
+        Pizza={Pizza}
+      />
+      <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
     </div>
   );
 }
