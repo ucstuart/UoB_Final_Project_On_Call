@@ -1,9 +1,9 @@
 
-const CheckOut = () => {
+const CheckOut = (props) => {
+  const { countCartItems } = props;
   return (
     <div className="w-1/5 h-auto bg-[#fff] flex flex-col ml-10">
-      <h1>Your Basket</h1>
-      <h3>You don't have any items in your basket</h3>
+      <h1>{ countCartItems }</h1>
     </div>
   )
 }
