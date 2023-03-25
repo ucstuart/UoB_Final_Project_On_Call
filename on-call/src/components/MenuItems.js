@@ -1,6 +1,6 @@
 import React from 'react'
 
-const menuTester = (props) => {
+const MenuItems = (props) => {
   const { Pizza } = props;
   return (
     <div className="mb-10">
@@ -19,4 +19,4 @@ const menuTester = (props) => {
   )
 }
 
-export default menuTester
+export default MenuItems
