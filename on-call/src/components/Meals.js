@@ -27,8 +27,37 @@ const meals =
       {
         id: 5,
         name: "Beef Sizzler",
-        price: "£18:00",
+        price: "£18.00",
         description: "Green Chillies, Jalapenos, Red Onions, Roquito Peppers, Seasoned Minced Beef"
-    }]}
+    }],
+  Burgers: [
+    {
+        id: 5,
+        name: "Beef Sizzler",
+        price: "£18.00",
+        description: "Green Chillies, Jalapenos, Red Onions, Roquito Peppers, Seasoned Minced Beef"
+    },
+    {
+        id: 5,
+        name: "Beef Sizzler",
+        price: "£18.00",
+        description: "Green Chillies, Jalapenos, Red Onions, Roquito Peppers, Seasoned Minced Beef"
+    },{
+        id: 5,
+        name: "Beef Sizzler",
+        price: "£18.00",
+        description: "Green Chillies, Jalapenos, Red Onions, Roquito Peppers, Seasoned Minced Beef"
+    },{
+        id: 5,
+        name: "Beef Sizzler",
+        price: "£18.00",
+        description: "Green Chillies, Jalapenos, Red Onions, Roquito Peppers, Seasoned Minced Beef"
+    },{
+        id: 5,
+        name: "Beef Sizzler",
+        price: "£18.00",
+        description: "Green Chillies, Jalapenos, Red Onions, Roquito Peppers, Seasoned Minced Beef"
+    }
+]}
 
 export default meals;
