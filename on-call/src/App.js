@@ -35,8 +35,13 @@ function App() {
   return (
     <div className="flex justify-center h-screen app-container">
       <SideNav />
-      <Menu cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} Pizza={Pizza} />
-      <CheckOut countCartItems={cartItems.length} />
+      <Menu
+        cartItems={cartItems}
+        onAdd={onAdd}
+        onRemove={onRemove}
+        Pizza={Pizza}
+      />
+      <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
     </div>
   );
 }

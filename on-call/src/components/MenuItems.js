@@ -6,7 +6,7 @@ const MenuItems = (props) => {
     <div className="mb-10">
         <div className="flex justify-between ml-5">
         <h3 className="mb-1 text-xl">{ Pizza.name }</h3>
-        <p className="ml-auto mr-5">{ Pizza.price }</p>
+        <p className="ml-auto mr-5">£{ Pizza.price }</p>
         {item ? ( <div>
           <buton onClick={() => onRemove(item)} className="border-2 border-white  mr-2 px-1 text-sm cursor-pointer"> - </buton>
           <span> {item.qty} </span>
