@@ -2,11 +2,11 @@ const CheckOut = (props) => {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((accumulator, current) => accumulator + current.price * current.qty, 0);
   return (
-    <div className="w-1/5 h-auto bg-[#6D72C3] flex flex-col ml-10">
+    <div className="w-1/5 h-auto bg-[#fff] flex flex-col ml-10">
       <div>
-        <h2>Cart Items</h2>
+        <h1 className="text-center text-5xl mb-20 mt-5">Your Basket</h1>
         <div>
-          {cartItems.length === 0 && <div>Cart is empty</div>}
+          {cartItems.length === 0 && <h2 className="text-xl ml-3">Your basket is empty.</h2>}
           {cartItems.map((item) => (
             <div key={item.id}>
               <div>{item.name}</div>

@@ -8,11 +8,11 @@ const MenuItems = (props) => {
         <h3 className="mb-1 text-xl">{ Pizza.name }</h3>
         <p className="ml-auto mr-5">£{ Pizza.price }</p>
         {item ? ( <div>
-          <buton onClick={() => onRemove(item)} className="border-2 border-white  mr-2 px-1 text-sm cursor-pointer"> - </buton>
+          <button onClick={() => onRemove(item)} className="border-2 border-white  mr-2 px-1 text-sm cursor-pointer"> - </button>
           <span> {item.qty} </span>
-          <buton onClick={() => onAdd(item)} className="border-2 border-white mr-2 px-1 text-sm cursor-pointer ml-1"> + </buton>
+          <button onClick={() => onAdd(item)} className="border-2 border-white mr-2 px-1 text-sm cursor-pointer ml-1"> + </button>
         </div>) : (
-        <buton onClick={() => onAdd(Pizza)} className=" border-white border-2 px-3 mr-2 text-sm cursor-pointer"> ADD </buton>
+        <button onClick={() => onAdd(Pizza)} className=" border-white border-2 px-3 mr-2 text-sm cursor-pointer"> ADD </button>
         )
         }
         </div>
