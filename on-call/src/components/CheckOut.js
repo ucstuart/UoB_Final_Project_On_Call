@@ -8,7 +8,7 @@ const CheckOut = (props) => {
         <div className="ml-5">
           {cartItems.length === 0 && <h2 className="text-xl ml-5">Your basket is empty.</h2>}
           {cartItems.map((item) => (
-            <div className="justify-between"key={item.id}>
+            <div key={item.id}>
               <div><h3 className="text-lg mt-3">{item.name}</h3></div>
               <p className="text-sm mb-5">{item.description}</p>
               <div className="border-2 border-black mr-5 inline">
@@ -25,10 +25,12 @@ const CheckOut = (props) => {
             </div>
           ))}
           {cartItems.length !== 0 && (
-              <div className="flex justify-between mt-5 border-t-2 w-100">
-                <div className="text-lg"> Total Price</div>
-                <div className="mr-5 text-lg">£{ (itemsPrice.toFixed(2))}</div>
-            </div>
+              <div className="mt-5 border-t-2 w-100">
+                <div className="flex justify-between">
+                  <div className="text-lg"> Total Price</div>
+                <div className="mr-5 text-lg">£{ (itemsPrice.toFixed(2))}</div></div>
+                  <button className="bg-[green] text-white p-4 rounded text-lg mt-7 w-3/4 ml-10">Checkout</button>
+                </div>
           )}
         </div>
       </div>
