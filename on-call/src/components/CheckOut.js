@@ -6,7 +6,7 @@ const CheckOut = (props) => {
       <div>
         <h1 className="ml-5 text-4xl mb-20 mt-5">Your Basket</h1>
         <div className="ml-5">
-          {cartItems.length === 0 && <h2 className="text-xl ml-5">Your basket is empty.</h2>}
+          {cartItems.length === 0 && <h2 className="text-xl ml-1">Your basket is empty.</h2>}
           {cartItems.map((item) => (
             <div key={item.id}>
               <div><h3 className="text-lg mt-3">{item.name}</h3></div>
