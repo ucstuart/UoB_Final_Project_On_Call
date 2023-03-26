@@ -11,15 +11,15 @@ const CheckOut = (props) => {
             <div key={item.id}>
               <div>{item.name}</div>
               <div>
-                <buton
+                <button
                   onClick={() => onRemove(item)}
                   className="border-2 border-white  mr-2 px-1 text-sm cursor-pointer"
                 >
                   {" "}
                   -{" "}
-                </buton>
-                <span>{item.qty }</span>
-                <buton onClick={() => onAdd(item)} className="border-2 border-white mr-2 px-1 text-sm cursor-pointer ml-1"> + </buton>
+                </button>
+                <span className="border-2 border-white px-3">{item.qty }</span>
+                <button onClick={() => onAdd(item)} className="border-2 border-white mr-2 px-1 text-sm cursor-pointer ml-1"> + </button>
               </div>
             </div>
           ))}
