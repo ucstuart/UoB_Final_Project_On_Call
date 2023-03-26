@@ -8,9 +8,10 @@ const CheckOut = (props) => {
         <div className="ml-5">
           {cartItems.length === 0 && <h2 className="text-xl ml-5">Your basket is empty.</h2>}
           {cartItems.map((item) => (
-            <div key={item.id}>
-              <div><h3 className="text-lg mb-2">{item.name}</h3></div>
-              <div className="border-2 border-black inline">
+            <div className="justify-between"key={item.id}>
+              <div><h3 className="text-lg mt-3">{item.name}</h3></div>
+              <p className="text-sm mb-5">{item.description}</p>
+              <div className="border-2 border-black mr-5 inline">
                 <button
                   onClick={() => onRemove(item)}
                   className="text-sm px-2 cursor-pointer"
@@ -24,7 +25,7 @@ const CheckOut = (props) => {
             </div>
           ))}
           {cartItems.length !== 0 && (
-              <div className="flex justify-between mt-5 border-t-2">
+              <div className="flex justify-between mt-5 border-t-2 w-100">
                 <div className="text-lg"> Total Price</div>
                 <div className="mr-5 text-lg">£{ (itemsPrice.toFixed(2))}</div>
             </div>
