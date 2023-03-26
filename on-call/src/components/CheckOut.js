@@ -9,7 +9,7 @@ const CheckOut = (props) => {
           {cartItems.length === 0 && <h2 className="text-xl ml-5">Your basket is empty.</h2>}
           {cartItems.map((item) => (
             <div key={item.id}>
-              <div>{item.name}</div>
+              <div><h3 className="text-lg mb-2">{item.name}</h3></div>
               <div className="border-2 border-black inline">
                 <button
                   onClick={() => onRemove(item)}
@@ -18,15 +18,15 @@ const CheckOut = (props) => {
                   {" "}
                   -{" "}
                 </button>
-                <span className=" px-2">{item.qty }</span>
+                <span className=" px-2 border-2 border-black">{item.qty }</span>
                 <button onClick={() => onAdd(item)} className=" px-2 text-sm cursor-pointer"> + </button>
               </div>
             </div>
           ))}
           {cartItems.length !== 0 && (
-              <div>
-                <div> Items Price</div>
-                <div>£{ (itemsPrice.toFixed(2))}</div>
+              <div className="flex justify-between mt-5 border-t-2">
+                <div className="text-lg"> Total Price</div>
+                <div className="mr-5 text-lg">£{ (itemsPrice.toFixed(2))}</div>
             </div>
           )}
         </div>
