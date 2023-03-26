@@ -4,33 +4,30 @@ const CheckOut = (props) => {
   return (
     <div className="w-1/5 h-auto bg-[#fff] flex flex-col ml-10">
       <div>
-        <h1 className="text-center text-5xl mb-20 mt-5">Your Basket</h1>
-        <div>
-          {cartItems.length === 0 && <h2 className="text-xl ml-3">Your basket is empty.</h2>}
+        <h1 className="ml-5 text-4xl mb-20 mt-5">Your Basket</h1>
+        <div className="ml-5">
+          {cartItems.length === 0 && <h2 className="text-xl ml-5">Your basket is empty.</h2>}
           {cartItems.map((item) => (
             <div key={item.id}>
               <div>{item.name}</div>
-              <div>
+              <div className="border-2 border-black inline">
                 <button
                   onClick={() => onRemove(item)}
-                  className="border-2 border-white  mr-2 px-1 text-sm cursor-pointer"
+                  className="text-sm px-2 cursor-pointer"
                 >
                   {" "}
                   -{" "}
                 </button>
-                <span className="border-2 border-white px-3">{item.qty }</span>
-                <button onClick={() => onAdd(item)} className="border-2 border-white mr-2 px-1 text-sm cursor-pointer ml-1"> + </button>
+                <span className=" px-2">{item.qty }</span>
+                <button onClick={() => onAdd(item)} className=" px-2 text-sm cursor-pointer"> + </button>
               </div>
             </div>
           ))}
           {cartItems.length !== 0 && (
-            <>
-              <hr />
               <div>
                 <div> Items Price</div>
                 <div>£{ (itemsPrice.toFixed(2))}</div>
             </div>
-            </>
           )}
         </div>
       </div>
