@@ -8,7 +8,7 @@ const meals =
       },
       {
         id: 2,
-      name: "pepperoni Feast",
+      name: "Pepperoni Feast",
         price: 10.00,
         description: "Double Pepperoni, Extra Mozzarella Cheese"
       },
