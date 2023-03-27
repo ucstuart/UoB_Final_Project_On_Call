@@ -1,9 +1,9 @@
 import "./index.css";
-import SideNav from "./components/SideNav";
 import CheckOut from "./components/CheckOut";
 import Menu from "./components/Menu";
 import meals from "./components/Meals";
 import { useState } from "react";
+import Home from "./components/Home";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -33,15 +33,17 @@ function App() {
     }
   };
   return (
-    <div className="flex justify-center h-screen app-container">
-      <SideNav />
+    <div className="app-container h-screen">
+      <Home />
+      <div className="flex justify-center mt-10">
       <Menu
         cartItems={cartItems}
         onAdd={onAdd}
         onRemove={onRemove}
         Pizza={Pizza}
       />
-      <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+        <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+      </div>
     </div>
   );
 }
