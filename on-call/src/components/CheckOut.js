@@ -25,7 +25,7 @@ const CheckOut = (props) => {
             </div>
           ))}
           {cartItems.length !== 0 && (
-              <div className="mt-5 border-t-2 w-100">
+              <div className="mt-5 border-t-2 w-100 h-auto overflow-hidden">
                 <div className="flex justify-between">
                   <div className="text-lg"> Total Price</div>
                 <div className="mr-5 text-lg">£{ (itemsPrice.toFixed(2))}</div></div>
