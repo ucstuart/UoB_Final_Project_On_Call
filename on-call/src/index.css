@@ -10,4 +10,5 @@ html{
 }
 .app-container{
   background-image: url(./components/images/pexels-lucas-george-wendt-4592706.jpg);
+  height:100vh;
 }

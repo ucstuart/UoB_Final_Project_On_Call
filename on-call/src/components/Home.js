@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <nav className='flex h-auto justify-between bg-[#fff]'>
+    <nav className='flex h-1/10 justify-between bg-[#fff]'>
       <div className='flex'>
       <div><div className='p-5 bg-[#fff]'>Pixxy Pizzas</div></div>
         <div className='p-5 bg-[#fff] flex flex-col border-r-2'> <div className='flex justify-evenly'><AiOutlineStar /> 5.0</div>

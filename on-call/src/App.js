@@ -37,23 +37,23 @@ function App() {
     }
   };
   return ( 
-    <div className="app-container h-full">
+    <div className="app-container">
       <Home />
-      <ContactUs />
+      {/* <ContactUs /> */}
       {/* <Review /> */}
-      {/* <Routes>
+      <Routes>
         <Route path="/components/Review.js" element={<Review/>}/>
      </Routes>
 
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 ">
         <Menu
           cartItems={cartItems}
           onAdd={onAdd}
           onRemove={onRemove}
           Pizza={Pizza}
         />
-        <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} /> */}
-      {/* </div> */}
+        <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+      </div>
     </div> 
   );
 }
