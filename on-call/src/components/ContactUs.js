@@ -17,8 +17,8 @@ const ContactUs = () => {
           <h3>Location</h3>
         </div>
       </div>
-      <div className="h-2/5 bg-[#fff] w-1/5 mt-5 px-5 flex flex-col">
-        <table class="table-auto">
+      <div className="h-2/5 bg-[#fff] w-1/4 mt-5 px-5 flex flex-col">
+        <table class="table-auto mt-10">
           <thead>
             <tr className="border-2 border-black">
               <th>Day</th>
@@ -26,38 +26,38 @@ const ContactUs = () => {
               <th>Delivery</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
+          <tbody className="border-2 border-black ml-4">
+            <tr className="border-2 border-black">
               <td>Monday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>
-            <tr>
+            <tr className="border-2 border-black">
               <td>Tuesday</td>
-              <td>10:45am - 11:45pm</td>
-              <td>10:45am - 11:45pm</td>
+              <td>10:45am 11:45pm</td>
+              <td>10:45am 11:45pm</td>
             </tr>{" "}
-            <tr>
+            <tr className="border-2 border-black">
               <td>Wednesday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
-            <tr>
+            <tr className="border-2 border-black">
               <td>Thursday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
-            <tr>
+            <tr className="border-2 border-black">
               <td>Friday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
-            <tr>
+            <tr className="border-2 border-black">
               <td>saturday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
-            <tr>
+            <tr className="border-2 border-black">
               <td>Sunday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
