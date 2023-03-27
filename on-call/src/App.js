@@ -33,15 +33,17 @@ function App() {
     }
   };
   return (
-    <div className="bg-[#000] h-screen">
+    <div className="app-container h-screen">
       <Home />
-      {/* <Menu
+      <div className="flex justify-center mt-10">
+      <Menu
         cartItems={cartItems}
         onAdd={onAdd}
         onRemove={onRemove}
         Pizza={Pizza}
       />
-      <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} /> */}
+        <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+      </div>
     </div>
   );
 }
