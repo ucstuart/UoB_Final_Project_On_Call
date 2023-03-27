@@ -10,7 +10,7 @@ const Home = () => {
       <div className='flex'>
       <div><div className='p-5 bg-[#fff]'>Pixxy Pizzas</div></div>
         <div className='p-5 bg-[#fff] flex flex-col border-r-2'> <div className='flex justify-evenly'><AiOutlineStar /> 5.0</div>
-          <Link to='./Review.js'><div className='underline'>10 Reviews</div></Link></div>
+      <Link to='Review'><div className='underline'>10 Reviews</div></Link></div>
       <div className='p-5 bg-[#fff] border-r-2'><div className='flex justify-evenly'><BsBag /> 25 Mins</div> <p>Collection</p></div>
       <div className='p-5 bg-[#fff]'><div className='flex justify-evenly'><MdOutlineMoped /> 60 Mins</div><p>Delivery</p></div>
       </div>
