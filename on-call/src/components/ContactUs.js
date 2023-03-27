@@ -28,37 +28,37 @@ const ContactUs = () => {
           </thead>
           <tbody className="border-2 border-black ml-4">
             <tr className="border-2 border-black">
-              <td>Monday</td>
+              <td className="pl-2">Monday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>
             <tr className="border-2 border-black">
-              <td>Tuesday</td>
-              <td>10:45am 11:45pm</td>
-              <td>10:45am 11:45pm</td>
-            </tr>{" "}
-            <tr className="border-2 border-black">
-              <td>Wednesday</td>
+              <td className="pl-2">Tuesday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
             <tr className="border-2 border-black">
-              <td>Thursday</td>
+              <td className="pl-2">Wednesday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
             <tr className="border-2 border-black">
-              <td>Friday</td>
+              <td className="pl-2">Thursday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
             <tr className="border-2 border-black">
-              <td>saturday</td>
+              <td className="pl-2">Friday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>{" "}
             <tr className="border-2 border-black">
-              <td>Sunday</td>
+              <td className="pl-2">saturday</td>
+              <td>10:45am - 11:45pm</td>
+              <td>10:45am - 11:45pm</td>
+            </tr>{" "}
+            <tr className="border-2 border-black">
+              <td className="pl-2">Sunday</td>
               <td>10:45am - 11:45pm</td>
               <td>10:45am - 11:45pm</td>
             </tr>
