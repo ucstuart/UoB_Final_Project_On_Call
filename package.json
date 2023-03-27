@@ -2,6 +2,7 @@
   "dependencies": {
     "asterisk.io": "^0.1.1",
     "nodemailer": "^6.9.1",
+    "react-icons": "^4.8.0",
     "txtlocal": "^0.0.1"
   }
 }
