@@ -7,6 +7,7 @@ import meals from "./components/Meals";
 import { useState } from "react";
 import Home from "./components/Home";
 import Review from "./components/Review";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -38,7 +39,8 @@ function App() {
   return ( 
     <div className="app-container h-full">
       <Home />
-      <Review />
+      <ContactUs />
+      {/* <Review /> */}
       {/* <Routes>
         <Route path="/components/Review.js" element={<Review/>}/>
      </Routes>
