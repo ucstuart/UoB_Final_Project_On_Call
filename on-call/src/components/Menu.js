@@ -18,4 +18,4 @@ const Menu = (props) => {
   );
 };
 
-export default Menu;
+export { Menu };

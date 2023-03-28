@@ -32,4 +32,4 @@ const meals =
     }
 ]}
 
-export default meals;
+export { meals };
