@@ -1,24 +1,50 @@
-import React from 'react'
-import { AiOutlineStar } from 'react-icons/ai'
-import { BsBag } from 'react-icons/bs'
-import { MdOutlineMoped } from 'react-icons/md'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Menu } from "./Menu";
+import { CheckOut } from "./CheckOut";
+import { meals } from "./Meals";
+import { useState } from "react";
+import SecondNav from "./SecondNav";
 
 const Home = () => {
+  const [cartItems, setCartItems] = useState([]);
+  const { Pizza } = meals;
+  const onAdd = (Pizza) => {
+    const exist = cartItems.find((menuId) => menuId.id === Pizza.id);
+    if (exist) {
+      const newCartItems = cartItems.map((menuId) =>
+        menuId.id === Pizza.id ? { ...exist, qty: exist.qty + 1 } : menuId
+      );
+      setCartItems(newCartItems);
+    } else {
+      const newCartItems = [...cartItems, { ...Pizza, qty: 1 }];
+      setCartItems(newCartItems);
+    }
+  };
+  const onRemove = (Pizza) => {
+    const exist = cartItems.find((menuId) => menuId.id === Pizza.id);
+    if (exist.qty === 1) {
+      const newCartItems = cartItems.filter((menuId) => menuId.id !== Pizza.id);
+      setCartItems(newCartItems);
+    } else {
+      const newCartItems = cartItems.map((menuId) =>
+        menuId.id === Pizza.id ? { ...exist, qty: exist.qty - 1 } : menuId
+      );
+      setCartItems(newCartItems);
+    }
+  };
   return (
-    <nav className='flex h-1/10 justify-between bg-[#fff]'>
-      <div className='flex'>
-      <div><div className='p-5 bg-[#fff]'>Pixxy Pizzas</div></div>
-        <div className='p-5 bg-[#fff] flex flex-col border-r-2'> <div className='flex justify-evenly'><AiOutlineStar /> 5.0</div>
-      <Link to='Review'><div className='underline'>10 Reviews</div></Link></div>
-      <div className='p-5 bg-[#fff] border-r-2'><div className='flex justify-evenly'><BsBag /> 25 Mins</div> <p>Collection</p></div>
-      <div className='p-5 bg-[#fff]'><div className='flex justify-evenly'><MdOutlineMoped /> 60 Mins</div><p>Delivery</p></div>
+    <div>
+      <div className="flex justify-center mt-10 ">
+        <Menu
+          cartItems={cartItems}
+          onAdd={onAdd}
+          onRemove={onRemove}
+          Pizza={Pizza}
+        />
+        <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
       </div>
-      <div className='flex justify-center py-5 mr-5'><button className='bg-[#CF9FFF] px-20 rounded flex' variant="outlined"><MdOutlineMoped/>Delivery</button></div>
+    </div>
+  );
+};
 
-
-    </nav>
-  )
-}
-
-export default Home
+export default Home;

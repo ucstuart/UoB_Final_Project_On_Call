@@ -10,5 +10,13 @@ html{
   background-image: url(./components/images/pexels-lucas-george-wendt-4592706.jpg);
 }
 .app-container{
-  height:100%;
+  height:100vh;
+}
+.hero-container{
+  background-image: url(./components/images/pexels-vlada-karpovich-7902939.jpg);
+  width: 100%;
+  height: 92%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
