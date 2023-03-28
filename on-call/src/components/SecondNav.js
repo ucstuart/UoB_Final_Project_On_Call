@@ -36,10 +36,10 @@ const SecondNav = () => {
           </div>
         </div>
         <div className="flex justify-center py-5 mr-5">
-          <button className="bg-[#CF9FFF] px-20 rounded flex place-items-center text-xl">
+         <Link to='Home'> <button className="bg-[#CF9FFF] px-20 rounded flex place-items-center text-xl">
             <MdOutlineMoped />
             Delivery
-          </button>
+          </button></Link>
         </div>
       </nav>
   )

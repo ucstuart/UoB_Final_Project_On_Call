@@ -11,7 +11,7 @@ function App() {
     <div className="app-container">
       <SecondNav/>
       <Routes>
-        <Route path="Home" element={ <Home />}/>
+        <Route path="Home" element={<Home />} />
         <Route path="Review" element={ <Review /> } />
       </Routes>
        

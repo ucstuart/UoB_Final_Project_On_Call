@@ -1,13 +1,12 @@
 import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
-import SecondNav from "./SecondNav";
 
 export const Review = () => {
   return (
     <div> 
       <div className=" app-contanier h- flex justify-center">
-        <div className="h-4/5 bg-[#fff] w-2/5 mt-5 mr-5 flex flex-col justify-center">
-          <div className="border-b-2 border-light-purple  flex mt-2 ml-10 mr-10 pb-5">
+        <div className=" h-4/5 bg-[#fff] w-2/5 mt-5 mr-5 flex flex-col justify-center">
+          <div className="border-b-2 border-light-purple  flex mt-8 ml-10 mr-10 pb-5">
             <div className="flex mr-10">
               <AiOutlineStar />
               <AiOutlineStar />
