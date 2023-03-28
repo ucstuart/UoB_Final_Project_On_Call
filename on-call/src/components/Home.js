@@ -14,7 +14,7 @@ const Home = () => {
       <div className='p-5 bg-[#fff] border-r-2'><div className='flex justify-evenly'><BsBag /> 25 Mins</div> <p>Collection</p></div>
       <div className='p-5 bg-[#fff]'><div className='flex justify-evenly'><MdOutlineMoped /> 60 Mins</div><p>Delivery</p></div>
       </div>
-      <div className='flex justify-center py-5 mr-5'><button className='bg-[red] px-20 rounded flex'><MdOutlineMoped/>Delivery</button></div>
+      <div className='flex justify-center py-5 mr-5'><button className='bg-[#CF9FFF] px-20 rounded flex' variant="outlined"><MdOutlineMoped/>Delivery</button></div>
 
 
     </nav>

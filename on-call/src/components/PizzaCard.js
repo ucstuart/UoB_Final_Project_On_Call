@@ -12,7 +12,7 @@ const MenuItems = (props) => {
           <span className='border-2 border-black px-2'> {item.qty} </span>
           <button onClick={() => onAdd(item)} className="px-2 text-sm cursor-pointer"> + </button>
         </div></div>) : (
-        <button onClick={() => onAdd(Pizza)} className=" border-2 border-black px-2 mr-2 text-sm cursor-pointer"> ADD </button>
+        <button onClick={() => onAdd(Pizza)} className=" border-2 border-light-purple px-2 mr-2 text-sm cursor-pointer"> ADD </button>
         )
         }
         </div>

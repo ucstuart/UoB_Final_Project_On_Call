@@ -29,7 +29,7 @@ const CheckOut = (props) => {
                 <div className="flex justify-between">
                   <div className="text-lg"> Total Price</div>
                 <div className="mr-5 text-lg">£{ (itemsPrice.toFixed(2))}</div></div>
-                  <button className="bg-[green] text-white p-4 rounded text-lg mt-7 mb-10 w-3/4 ml-10">Checkout</button>
+                  <button className="bg-[#CF9FFF] text-black p-4 rounded text-lg mt-7 mb-10 w-3/4 ml-10">Checkout</button>
                 </div>
           )}
         </div>

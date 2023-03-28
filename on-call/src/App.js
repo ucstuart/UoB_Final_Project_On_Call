@@ -1,6 +1,6 @@
 import "./index.css";
-import './index'
-import { Routes, Route } from "react-router-dom";
+import "./index";
+import { Routes, Route,} from "react-router-dom";
 import CheckOut from "./components/CheckOut";
 import Menu from "./components/Menu";
 import meals from "./components/Meals";
@@ -36,25 +36,27 @@ function App() {
       setCartItems(newCartItems);
     }
   };
-  return ( 
+  return (
     <div className="app-container">
+      <div>
       <Home />
-      {/* <ContactUs /> */}
-      {/* <Review /> */}
       <Routes>
-        <Route path="/components/Review.js" element={<Review/>}/>
-     </Routes>
-
-      <div className="flex justify-center mt-10 ">
-        <Menu
-          cartItems={cartItems}
-          onAdd={onAdd}
-          onRemove={onRemove}
-          Pizza={Pizza}
-        />
-        <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+        <Route path="Home" element={<Home/>}/>
+        <Route path="Review" element={<Review />} />
+        <Route path="ContactUs" element={<ContactUs />} />
+        </Routes>
       </div>
-    </div> 
+        <div className="flex justify-center mt-10 ">
+          <Menu
+            cartItems={cartItems}
+            onAdd={onAdd}
+            onRemove={onRemove}
+            Pizza={Pizza}
+          />
+          <CheckOut cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+        </div>
+    
+    </div>
   );
 }
 
