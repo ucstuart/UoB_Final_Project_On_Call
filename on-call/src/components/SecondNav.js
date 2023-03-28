@@ -9,7 +9,7 @@ const SecondNav = () => {
      <nav className="flex h-1/10 justify-between bg-[#fff]">
         <div className="flex">
           <div>
-            <Link to="Home">
+            <Link to="/">
               <div className="p-5 bg-[#fff]">Pixxy Meals</div>
             </Link>
           </div>
