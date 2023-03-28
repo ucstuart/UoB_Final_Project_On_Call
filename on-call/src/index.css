@@ -7,8 +7,8 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: url(./components/images/pexels-lucas-george-wendt-4592706.jpg);
 }
 .app-container{
-  background-image: url(./components/images/pexels-lucas-george-wendt-4592706.jpg);
-  height:100vh;
+  height:100%;
 }
