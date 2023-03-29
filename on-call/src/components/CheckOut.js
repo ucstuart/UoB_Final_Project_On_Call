@@ -1,4 +1,4 @@
-33-implement-communications-between-frontend-and-backend
+
 import React from 'react';
 import {useState} from 'react';
 
@@ -7,20 +7,19 @@ const CheckOut = (props) => {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((accumulator, current) => accumulator + current.price * current.qty, 0);
    //Send in sms request to server to send collection message
-   const [name, setName] = useState("");
-   const [email, setEmail] = useState("");
-   const [mobileNumber, setMobileNumber] = useState("");
-   const [OrderNo, setOrderNo] = useState(0);
-   const [message, setMessage] = useState("");
-   const baseUrl = 'http://localhost:3003/'
-   
-   let handleSubmit = async (e) => {
-     e.preventDefault();
-     setOrderNo(OrderNo + 1);
-     try {
-       let res = await fetch(baseUrl, {
-         method: "POST",
-         headers:{
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
+  const [OrderNo, setOrderNo] = useState(0);
+  const [message, setMessage] = useState("");
+  const baseUrl = 'http://localhost:3003/'
+  let handleSubmit = async (e) => {
+  e.preventDefault();
+  setOrderNo(OrderNo + 1);
+  try {
+  let res = await fetch(baseUrl, {
+  method: "POST",
+  headers:{
            "Content-Type":'application/json'
          },
          body: JSON.stringify({
@@ -68,6 +67,7 @@ const CheckOut = (props) => {
             </div>
           ))}
           {cartItems.length !== 0 && (
+            <div>
               <div className="mt-5 border-t-2 w-100 h-auto overflow-hidden">
                 <div className="flex justify-between">
                   <div className="text-lg"> Total Price</div>
