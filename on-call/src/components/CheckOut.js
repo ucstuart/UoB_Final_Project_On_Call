@@ -3,7 +3,7 @@ const CheckOut = (props) => {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((accumulator, current) => accumulator + current.price * current.qty, 0);
   return (
-    <div className="w-1/5 bg-[#fff] h-full flex flex-col ml-10">
+    <div className="w-4/5 bg-[#fff] flex flex-col md:w-1/5">
       <div>
         <h1 className="ml-5 text-4xl mb-5 mt-5">Your Basket</h1>
         <div className="ml-5">

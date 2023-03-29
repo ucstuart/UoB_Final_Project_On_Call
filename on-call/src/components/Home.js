@@ -34,7 +34,7 @@ const Home = () => {
   };
   return (
     <div>
-      <div className="flex justify-center mt-10 ">
+      <div className="flex flex-col justify-center items-center mt-10 md:flex-row md:items-start">
         <Menu
           cartItems={cartItems}
           onAdd={onAdd}

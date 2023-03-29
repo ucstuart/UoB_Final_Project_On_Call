@@ -1,5 +1,4 @@
 import React from 'react'
-import PizzaPic from './images/pexels-vlada-karpovich-7902939.jpg'
 import '../index.css'
 
 const Hero = () => {
