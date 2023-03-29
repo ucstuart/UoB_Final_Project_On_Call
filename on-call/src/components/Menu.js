@@ -3,7 +3,7 @@ import PizzaCard from './PizzaCard'
 const Menu = (props) => {
   const { cartItems, Pizza, onAdd, onRemove } = props;
   return (
-    <div className="w-1/5 h-full bg-[#fff] flex flex-col mb-10 ml-10">
+    <div className="w-4/5 h-full bg-[#fff] flex mr-0 flex-col mb-10 md:w-1/5 md:mr-5">
       <h1 className="ml-5 text-4xl mb-20 mt-5">Pizza</h1>
       {Pizza.map((Pizza) => (
         <PizzaCard
@@ -18,4 +18,4 @@ const Menu = (props) => {
   );
 };
 
-export default Menu;
+export { Menu };
