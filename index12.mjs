@@ -1,14 +1,14 @@
-const {security} = require("./security.js");
+import {asteriskip,amiusername,amipassword,host,user,password} from "./security.js";
 
-console.log(security.asteriskip); // asterisk IP address
-console.log(security.amiusername); // asterisk ami username
+console.log(asteriskip); // asterisk IP address
+console.log(amiusername); // asterisk ami username
 console.log(security.amipassword); // asterisk ami password
 console.log(security.host); // email host fqdn
 console.log(security.user); // email username
 console.log(security.password); // email password
 
 
-import AmiClient from 'asterisk-ami';
+import {AmiClient} from 'asterisk-ami';
 
 const ami = new AmiClient({
   reconnect: true,
@@ -17,10 +17,10 @@ const ami = new AmiClient({
   emitResponsesById: true,
   emitInvalidMessage: true,
   emitUnhandledEvent: true,
-  host: ${security.asteriskip},
+  host:security.asteriskip,
   port: 5038,
-  username: ${security.amiusername},
-  password: ${security.amipassword},
+  username:security.amiusername,
+  password:security.amipassword,
 });
 
 ami.connect();

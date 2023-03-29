@@ -10,8 +10,8 @@ console.log(security.password); // email password
 const net = require('net');
 
 const amiSocket = net.createConnection({
-  host: ${security.asteriskip},
-  port: 5038,
+  host:security.asteriskip,
+  port:5038,
 }, () => {
   console.log('Connected to Asterisk Manager Interface');
   

@@ -1,4 +1,4 @@
-const {security} = require("./security.js");
+import security from security.js
 
 console.log(security.asteriskip); // asterisk IP address
 console.log(security.amiusername); // asterisk ami username
@@ -12,12 +12,12 @@ const { createTransport, getTestMessageUrl } = require('nodemailer');
 
 // create reusable transporter object using the default SMTP transport
 let transporter = createTransport({
-    host: ${security.host},
-    port: 465,
+    host:security.host,
+    port:465,
     secure: true,
     auth: {
-        user: ${security.user},
-        pass: ${security.password}'
+        user:security.user,
+        pass:security.password,
     }
 });
 

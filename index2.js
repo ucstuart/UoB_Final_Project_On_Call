@@ -1,4 +1,4 @@
-const {security} = require("./security.js");
+const {security} = require("./security");
 
 console.log(security.asteriskip); // asterisk IP address
 console.log(security.amiusername); // asterisk ami username
@@ -9,10 +9,10 @@ console.log(security.password); // email password
 
 const net = require('net');
 
-const AMI_HOST = ${security.asteriskip};
+const AMI_HOST = security.asteriskip;
 const AMI_PORT = 5038;
-const AMI_USERNAME = ${security.amiusername};
-const AMI_SECRET = ${security.amipassword};
+const AMI_USERNAME = security.amiusername;
+const AMI_SECRET = security.amipassword;
 
 // Create the socket connection to Asterisk AMI
 const socket = net.createConnection({ port: AMI_PORT, host: AMI_HOST }, () => {
