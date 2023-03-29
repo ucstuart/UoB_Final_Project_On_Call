@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const SecondNav = () => {
   return (
-     <nav className="flex h-1/10 justify-between bg-[#fff]">
+     <nav className="flex flex-col h-1/10 justify-between bg-[#fff] md:flex-row">
         <div className="flex">
           <div>
             <Link to="/">
-              <div className="p-5 bg-[#fff]">Pixxy Meals</div>
+              <div className="p-5 bg-[#fff] border-r-2 py-8">Pixxy Meals</div>
             </Link>
           </div>
           <div className="p-5 bg-[#fff] flex flex-col border-r-2">
