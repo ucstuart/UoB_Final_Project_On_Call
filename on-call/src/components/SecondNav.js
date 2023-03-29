@@ -36,7 +36,7 @@ const SecondNav = () => {
           </div>
         </div>
         <div className="flex justify-center py-5 mr-5">
-         <Link to='Home'> <button className="bg-[#CF9FFF] px-20 rounded flex place-items-center text-xl">
+         <Link to='Home'> <button className="bg-[#CF9FFF] px-20 py-5 rounded flex place-items-center text-xl dropdownDefaultButton"data-dropdown-toggle="dropdown" type="button">
             <MdOutlineMoped />
             Delivery
           </button></Link>
