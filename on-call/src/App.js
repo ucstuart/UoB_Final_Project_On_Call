@@ -12,12 +12,12 @@ function App() {
     <div className="app-container">
    
       <SecondNav />
+    
       <Routes>
         <Route path="/" element={<Hero/> } />
         <Route path="Home" element={<Home />} />
         <Route path="Review" element={ <Review /> } />
       </Routes>
-     
     </div>
   );
 }
