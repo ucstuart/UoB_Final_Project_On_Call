@@ -3,7 +3,7 @@ import { Menu } from "./Menu";
 import { CheckOut } from "./CheckOut";
 import { meals } from "./Meals";
 import { useState } from "react";
-import SecondNav from "./SecondNav";
+
 
 const Home = () => {
   const [cartItems, setCartItems] = useState([]);
