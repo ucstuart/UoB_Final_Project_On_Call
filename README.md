@@ -151,10 +151,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 ## Presentation
 
-[powerpoint presentation](assets/Presentation/UoB_project_management_PixieMeals.pdf)
+[powerpoint presentation](https://ucreseller.co.uk/UoB_project_management_PixieMeals.pdf)
 
 
-[pdf](assets/Presentation/UoB_project_management_PixieMeals.pptx)
+[pdf](https://ucreseller.co.uk/UoB_project_management_PixieMeals.pptx)
 
 ## Links
 Links to submitted items:
