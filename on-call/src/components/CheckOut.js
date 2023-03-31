@@ -34,6 +34,7 @@ const CheckOut = (props) => {
        if (res.status === 200) {
          setName("");
          setEmail("");
+         setMobileNumber("");
          setMessage("Thank you for your Order. A Pixie will let you know when the meal is ready!");
        } else {
          setMessage("Some error occured");
