@@ -3,6 +3,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { BsBag} from "react-icons/bs";
 import { MdOutlineMoped } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Pixie from './images/image (2).png'
 
 const SecondNav = () => {
   return (
@@ -10,7 +11,7 @@ const SecondNav = () => {
         <div className="flex">
           <div>
             <Link to="/">
-              <div className="p-5 bg-[#fff] border-r-2 py-8">Pixxy Meals</div>
+              <div className="p-5 bg-[#fff] border-r-2 py-8"><img className='max-h-10' src={Pixie} alt="pixielogo"></img></div>
             </Link>
           </div>
           <div className="p-5 bg-[#fff] flex flex-col border-r-2">
@@ -36,7 +37,7 @@ const SecondNav = () => {
           </div>
         </div>
         <div className="flex justify-center py-5 mr-5">
-         <Link to='Home'> <button className="bg-[#CF9FFF] px-20 rounded flex place-items-center text-xl">
+         <Link to='Home'> <button className="bg-[#CF9FFF] px-20 py-5 rounded flex place-items-center text-xl dropdownDefaultButton"data-dropdown-toggle="dropdown" type="button">
             <MdOutlineMoped />
             Delivery
           </button></Link>
