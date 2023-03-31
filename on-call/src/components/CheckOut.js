@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+
 const CheckOut = (props) => {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce(
@@ -116,7 +117,9 @@ const CheckOut = (props) => {
                   </div>
                 </form>
               </div>
-            </div>
+                //   <button className="bg-[#CF9FFF] text-black p-4 rounded text-lg mt-7 mb-10 w-3/4 ml-10">Checkout</button>
+                // </div>
+
           )}
         </div>
       </div>
