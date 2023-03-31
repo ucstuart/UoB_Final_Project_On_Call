@@ -184,3 +184,9 @@ https://github.com/ucstuart/UoB_Final_Project_On_Call
   * [Running tests](https://facebook.github.io/create-react-app/docs/running-tests)
  * [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+## Contributors
+
+Arshad Mohammed
+Adam Willetts
+Marilena Cancel
+Stuart Rudd
