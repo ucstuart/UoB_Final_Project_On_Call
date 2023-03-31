@@ -92,12 +92,12 @@ const CheckOut = (props) => {
                         placeholder="Mobile Number"
                         onChange={(e) => setMobileNumber(e.target.value)}
                       />
-                    <button type="submit" className="bg-[green] text-white p-4 rounded text-lg mt-7 w-3/4 ml-10">Checkout</button>
+                    <button type="submit" className="bg-[#CF9FF] text-white p-4 rounded text-lg mt-7 w-3/4 ml-10">Checkout</button>
                     <div className='message'>{message ? <p>{message}</p>: null}</div>
 
                     </form>
               </div>
-                  <button className="bg-[#CF9FFF] text-black p-4 rounded text-lg mt-7 mb-10 w-3/4 ml-10">Checkout</button>
+        
                 </div>
           )}
         </div>
